@@ -13,6 +13,7 @@
     &__list {
         list-style: none; //retrait des puces à liste
         margin-top: 5px; //ajout d'une marge de 5px pour espacer le logo du nav. Pas d'ajout sur &__nav pour ne pas écrire de ligne en plus !
+        line-height: 1.8em;
     }
 
     &__link {

@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  line-height: 1.2em;
-}
-
 .header {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -16,6 +12,7 @@ body {
 .header__list {
   list-style: none;
   margin-top: 5px;
+  line-height: 1.8em;
 }
 .header__link {
   color: #000000;
@@ -42,6 +39,7 @@ body {
   width: 290px;
   margin: 0 auto;
   padding: 25px;
+  line-height: 40px;
 }
 .hero__title__span {
   display: block;
@@ -67,6 +65,7 @@ body {
   border: 1px black solid;
   padding: 18px;
   margin: 50px 0 60px 0;
+  line-height: 1.2em;
 }
 
 .patisseries {
@@ -97,6 +96,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 0.9em;
   padding: 15px;
+  line-height: 1.2em;
 }
 .patisseries__btn {
   font-family: "Poppins", sans-serif;
@@ -144,6 +144,7 @@ body {
 .story__descrip {
   text-align: left;
   font-size: 0.85em;
+  line-height: 1.2em;
 }
 .story__btn {
   color: #ffffff;
@@ -171,6 +172,7 @@ body {
 .contact__descrip {
   font-family: "Poppins", sans-serif;
   font-size: 0.85em;
+  line-height: 1.2em;
 }
 .contact__formulaire {
   display: flex;
@@ -227,6 +229,31 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #AB864C;
   padding: 8px;
+}
+
+.map {
+  background-color: #AB864C;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #ffffff;
+}
+.map__titre {
+  font-family: "Kaisei Decol", sans-serif;
+  font-size: 1.9em;
+  margin-top: 30px;
+}
+.map__adresse {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+}
+.map__span {
+  display: block;
+}
+.map__iframe {
+  width: 100%;
+  height: 350px;
 }
 
 /*# sourceMappingURL=main.css.map */

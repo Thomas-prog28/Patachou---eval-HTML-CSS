@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as *;
+
+.map {
+    background-color: $bgcolor;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: $color-w;
+
+    &__titre {
+        font-family: $font-kaisei;
+        font-size: 1.9em;
+        margin-top: 30px;        
+    }
+
+    &__adresse {
+        font-family: $font-pop;
+        font-size: 0.9em;    
+    }
+
+    &__span {
+        display: block;
+    }
+
+    &__iframe {
+        width: 100%;
+        height: 350px;
+        }
+}
