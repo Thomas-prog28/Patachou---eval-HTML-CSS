@@ -8,16 +8,32 @@
     display: flex;
     flex-direction: column;
 
+    @media(min-width: 768px) {
+            font-size: 0.7em;
+        }
+
     &__block1 {
         display: flex;
         flex-direction: column;
         padding: 70px;
         gap: 20px;
+
+        @media(min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 50px 30px 50px 30px;
+            gap: 20px;
+        }
     }
 
     &__logo {
         width: 50%;
-        margin: 0 auto;
+        margin: 0;
+
+        @media(min-width: 768px) {
+            width: 13%;
+        }
     }
 
     &__list {
@@ -25,6 +41,10 @@
         line-height: 1.2em;
         text-align: left;
         margin-left: 40px;
+
+        @media(min-width: 768px) {
+            margin: 0;
+        }
     }
 
     &__link {
@@ -36,50 +56,46 @@
         color: $color-gold;
     }
 
+    &__blocka {
+        text-align: left;
+        padding-left: 35px;
+    }
+
     &__span {
         display: block;
-        line-height: 0.8em;
+        line-height: 0.6em;
     }
 
-    &__blockminilogo {
+    &__blockb {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        text-align: left;
     }
 
-    &__minilogo {
+    &__followme {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__logors {
         width: 30px;
         fill: white;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     &__mentions {
         border: 1px solid $color-gold;
         font-size: 0.85em;
-        padding: 15px;
+        padding: 12px;
         line-height: 2em;
+    }
+
+    &__mentions {
+        @media(min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
     }
 }

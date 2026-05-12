@@ -1,19 +1,29 @@
 @use '../abstracts/variables' as *;
 
 .contact {
-    padding: 16px;
+    padding: 0 16px 30px 16px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
+    @media(min-width: 768px) {
+        padding: 16px 25px 16px 25px;
+        margin-bottom: 80px;
+    }
+
     &__title {
         font-size: 1.3em;
-        border-top: black 1px solid;
-        width: 310px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 30px 30px 30px;
         text-align: center;
         font-family: $font-kaisei;
+
+        @media(min-width: 768px) {
+            text-align: left;
+            width: 600px;
+            margin: 20px 0 0 0;
+            padding: 0;           
+        }
     }
 
     &__descrip {
@@ -57,12 +67,20 @@
     &__champs {
         width: 165px;
         height: 25px;
+
+        @media(min-width: 768px) {
+            width: 355px;          
+        }
     }
 
     &__email {
         border: none;
         display: flex;
         flex-direction: column;
+
+        @media(min-width: 768px) {
+            width: 717px;          
+        }
     }
 
     &__message {
@@ -79,7 +97,11 @@
     &__checkbox {
         font-family: $font-pop;
         font-size: 0.85em;
-        width: 230px;     
+        width: 230px;   
+        
+        @media(min-width: 768px) {
+            width: 540px;          
+        }
     }
 
     &__btn {
