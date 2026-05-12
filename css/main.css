@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  line-height: 1.2em;
+}
+
 .header {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -102,6 +106,127 @@
   background: none;
   border: 1px white solid;
   padding: 10px;
+}
+
+.story {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 16px;
+}
+.story__block1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.story__badge {
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.story__guill {
+  display: block;
+  width: 9%;
+  margin: 0 auto;
+}
+.story__title {
+  font-family: "Kaisei Decol", sans-serif;
+  font-size: 2em;
+}
+.story__block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.story__descrip {
+  text-align: left;
+  font-size: 0.85em;
+}
+.story__btn {
+  color: #ffffff;
+  background-color: #AB864C;
+  border: none;
+  width: 110px;
+  padding: 12px;
+}
+
+.contact {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact__title {
+  font-size: 1.3em;
+  border-top: black 1px solid;
+  width: 310px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Kaisei Decol", sans-serif;
+}
+.contact__descrip {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+}
+.contact__formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact__identity {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.contact__legend {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+}
+.contact__fields {
+  display: flex;
+  gap: 7px;
+}
+.contact__underfields {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contact__label {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6em;
+}
+.contact__champs {
+  width: 165px;
+  height: 25px;
+}
+.contact__email {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.contact__message {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.contact__confidentiality {
+  display: flex;
+  gap: 5px;
+}
+.contact__checkbox {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+  width: 230px;
+}
+.contact__btn {
+  border: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background-color: #AB864C;
+  padding: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */

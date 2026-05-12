@@ -1,7 +1,9 @@
 @use './base/reset.scss';
+@use './base/base';
 @use './abstracts/variables';
 @use './layout/header';
 @use './sections/hero';
 @use './sections/savoirfaire';
 @use './sections/patisseries';
 @use './sections/story';
+@use './sections/contact';

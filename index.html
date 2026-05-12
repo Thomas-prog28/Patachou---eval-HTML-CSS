@@ -82,56 +82,67 @@
         </section>
 
         <section class="story">
-            <img class="story__badge" src="/images/poche-douille_histoire-patachou.png" alt="poche à douille">
-            <img class="story__guill" src="/images/quote.svg" alt="guillemets">
-            <h4 class="story__title">Patachou, toute une histoire…</h4>
-            <p class="story__descrip">Une petite pâtisserie familiale, fondée il y a plusieurs décennies, se transmet de
-                génération en
-                génération, préservant l'artisanat traditionnel et les recettes secrètes. Connue pour ses créations
-                uniques et raffinées, elle devient au fil du temps un lieu incontournable pour les amateurs de douceurs.
-                Malgré les défis modernes, la passion et le savoir-faire continuent de faire vivre cette enseigne, où
-                chaque pâtisserie raconte une histoire d'amour du métier
-            </p>
-            <button class="story__btn">Notre histoire</button>
+            <div class="story__block1">
+                <img class="story__badge" src="/images/poche-douille_histoire-patachou.png" alt="poche à douille">
+                <img class="story__guill" src="/images/quote.svg" alt="guillemets">
+                <h4 class="story__title">Patachou, toute une histoire…</h4>
+            </div>
+            <div class="story__block2">
+                <p class="story__descrip">Une petite pâtisserie familiale, fondée il y a plusieurs décennies, se
+                    transmet de
+                    génération en
+                    génération, préservant l'artisanat traditionnel et les recettes secrètes. Connue pour ses créations
+                    uniques et raffinées, elle devient au fil du temps un lieu incontournable pour les amateurs de
+                    douceurs.
+                    Malgré les défis modernes, la passion et le savoir-faire continuent de faire vivre cette enseigne,
+                    où
+                    chaque pâtisserie raconte une histoire d'amour du métier
+                </p>
+                <button class="story__btn">Notre histoire</button>
+            </div>
         </section>
 
         <section class="contact">
-            <h2 class="contact__title">Des gâteaux pour votre événement ?</h2>
+            <h2 class="contact__title">Des gâteaux<br>pour votre événement ?</h2>
             <p class="contact__descrip">Pour vos événements exclusifs – anniversaire, séminaire d’entreprise ou
                 réception privée – offrez à vos invités une sélection raffinée de pâtisseries, biscuits, mignardises et
                 tartes, soigneusement élaborés pour sublimer chaque moment !
             </p>
 
-            <form action="" class="contact__form"></form>
-            <fieldset class="contact__identity">
-                <legende>Votre nom et prénom</legende>
-                <div class="contact__fields">
-                    <div class="contact__underfields">
-                        <input type="text" id="prenom">
-                        <label class="contact__label" for="prenom">Prénom</label>
+            <form action="" class="contact__formulaire">
+                <fieldset class="contact__identity">
+                    <legend class="contact__legend">Votre nom et prénom</legend>
+                    <div class="contact__fields">
+                        <div class="contact__underfields">
+                            <label class="contact__label" for="prenom">Prénom</label>
+                            <input class="contact__champs" type="text" id="prenom">
+                        </div>
+                        <div class="contact__underfields">
+                            <label class="contact__label" for="nom">Nom</label>
+                            <input class="contact__champs" type="text" id="nom">
+                        </div>
                     </div>
-                    <div class="contact_underfields">
-                        <input type="text" id="nom">
-                        <label class="contact__label" for="nom">Nom</label>
-                    </div>
+                </fieldset>
+
+                <fieldset class="contact__email">
+                    <legend class="contact__legend">Votre email</legend>
+                    <input type="text">
+                </fieldset>
+
+                <fieldset class="contact__message">
+                    <legend class="contact__legend">Votre message</legend>
+                    <textarea rows="4" cols="26"></textarea>
+                </fieldset>
+
+                <div class="contact__confidentiality">
+                    <input type="checkbox" id="confidentiality">
+                    <label class="contact__checkbox" for="confidentiality">J'ai lu et j'accepte la politique de
+                        confidentialité</label>
                 </div>
-            </fieldset>
 
-            <fieldset class="contact__email">
-                <legende class="contact__legende">Votre email</legende>
-                <input type="text">
-            </fieldset>
+                <button class="contact__btn" type="submit">Envoyer</button>
 
-            <fieldset class="contact__message">
-                <legende contact__legende>Votre message</legende>
-                <textarea rows="4" cols="26"></textarea>
-            </fieldset>
-
-            <input type="checkbox" id="confidentiality">
-            <label class="contact__checkbox" for="confidentiality">J'ai lu et j'accepte la politique de
-                confidentialité</label>
-
-            <button class="contact__btn" type="submit">Envoyer</button>
+            </form>
         </section>
 
         <section class="map">

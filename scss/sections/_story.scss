@@ -1,2 +1,54 @@
 @use '../abstracts/variables' as *;
 
+.story {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 16px;
+
+    &__block1 {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__badge {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    &__guill {
+        display: block;
+        width: 9%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: $font-kaisei;
+        font-size: 2.0em;
+    }
+
+    &__block2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: $font-pop;
+    }
+
+    &__descrip {
+        text-align: left;
+        font-size: 0.85em;
+    }
+
+    &__btn { 
+        color: $color-w;
+        background-color: $bgcolor;
+        border: none;
+        width: 110px;
+        padding: 12px;
+    }
+
+}

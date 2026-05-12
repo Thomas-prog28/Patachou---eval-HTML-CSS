@@ -1,0 +1,92 @@
+@use '../abstracts/variables' as *;
+
+.contact {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title {
+        font-size: 1.3em;
+        border-top: black 1px solid;
+        width: 310px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        font-family: $font-kaisei;
+    }
+
+    &__descrip {
+        font-family: $font-pop;
+        font-size: 0.85em;
+    }
+
+    &__formulaire {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__identity {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__legend {
+        font-family: $font-pop;
+        font-size: 0.85em;
+    }
+
+    &__fields {
+        display: flex;
+        gap: 7px;
+    }
+
+    &__underfields {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__label {
+        font-family: $font-pop;
+        font-size: 0.6em;
+    }
+
+    &__champs {
+        width: 165px;
+        height: 25px;
+    }
+
+    &__email {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__message {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__confidentiality {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__checkbox {
+        font-family: $font-pop;
+        font-size: 0.85em;
+        width: 230px;
+     
+    }
+
+    &__btn {
+        border: none;
+        color: $color-w;
+        font-family: $font-pop;
+        background-color: $bgcolor;
+        padding: 8px;
+    }
+}
