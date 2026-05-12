@@ -1,28 +1,28 @@
+// =================================================================
+// import du fichier scss de variable pour utilisation des variables
+// =================================================================
 @use '../abstracts/variables' as *;
 
+
 .header {
-    text-align: center;
-    font-family: $font-pop;
-    padding: 15px;
-    
+    text-align: center; //alignement de tous les éléments
+    font-family: $font-pop; //choix de la police d'écriture
+    padding: 15px; //insertion d'un espacement de 15px entre tous les éléments et le bords de la section header
+
 
     &__list {
-        list-style: none;
-        margin-top: 5px;
+        list-style: none; //retrait des puces à liste
+        margin-top: 5px; //ajout d'une marge de 5px pour espacer le logo du nav. Pas d'ajout sur &__nav pour ne pas écrire de ligne en plus !
     }
 
     &__link {
-        color: $color-bl;
-        font-size: 1em;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-decoration: none;
+        color: $color-bl; //choix de la couleur de la police
+        font-weight: 600; //ajout d'un effet "gras" sur les lettres de la police
+        text-transform: uppercase; //mise en majuscule de la police d'écriture des liens hypertexte
+        text-decoration: none; //retrait des underlines des liens hypertextes
 
         &:hover {
-            color: $color-gold;
+            color: $color-gold; //changement de la couleur des liens hypertextes au passage de la souris
         }
     }
 }
-
-
-
