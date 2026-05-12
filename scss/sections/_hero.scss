@@ -5,7 +5,8 @@
 
 .hero {
     display: flex; //passage en display flex de la structure section/h1 pour manipuler le h1 
-    //   justify-content: center;                                //centrage horizontale du h1
+    flex-direction: column;
+    justify-content: center; //centrage horizontale du h1
     align-items: center;
     background-image: url('/images/haute-couture-2.jpg');
     background-size: cover;
@@ -15,14 +16,21 @@
     &__title {
         font-family: $font-kaisei;
         text-align: center;
-        background-color: $color-w;
-        width: 290px;
+        background-color: rgba($color-w, 0.85);
+        width: 80%;
         margin: 0 auto;
         padding: 25px;
         line-height: 40px;
 
-        &__span {
-            display: block;
+        @media (min-width: 768px) {
+            font-size: 2.6em;
+            height: 200px;
+            padding: 50px;
+            line-height: 50px;
         }
+    }
+
+    &__span {
+        display: block;
     }
 }

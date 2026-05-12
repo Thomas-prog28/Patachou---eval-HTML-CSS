@@ -8,17 +8,43 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 15px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+  }
+}
+@media (min-width: 768px) {
+  .header__nav {
+    padding-top: 15px;
+  }
 }
 .header__list {
   list-style: none;
   margin-top: 5px;
   line-height: 1.8em;
 }
+@media (min-width: 768px) {
+  .header__list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+}
 .header__link {
   color: #000000;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  .header__link {
+    font-size: 0.85em;
+  }
 }
 .header__link:hover {
   color: #AB864C;
@@ -29,6 +55,8 @@
 
 .hero {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-image: url("/images/haute-couture-2.jpg");
   background-size: cover;
@@ -38,13 +66,21 @@
 .hero__title {
   font-family: "Kaisei Decol", sans-serif;
   text-align: center;
-  background-color: #ffffff;
-  width: 290px;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 80%;
   margin: 0 auto;
   padding: 25px;
   line-height: 40px;
 }
-.hero__title__span {
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 2.6em;
+    height: 200px;
+    padding: 50px;
+    line-height: 50px;
+  }
+}
+.hero__span {
   display: block;
 }
 
@@ -70,6 +106,12 @@
   margin: 50px 0 60px 0;
   line-height: 1.2em;
 }
+@media (min-width: 768px) {
+  .savoirfaire__descrip {
+    margin: 50px 60px 60px 60px;
+    padding: 18px 120px 18px 115px;
+  }
+}
 
 .patisseries {
   background-color: #AB864C;
@@ -78,8 +120,7 @@
   font-family: "Kaisei Decol", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 35px;
+  justify-content: space-around;
   height: 2040px;
 }
 .patisseries__item {
@@ -88,11 +129,8 @@
   justify-content: center;
   gap: 50px;
 }
-.patisseries__hdtitle {
-  padding-top: 50px;
-}
 .patisseries__img {
-  width: 70%;
+  width: 70vw;
   margin: 0 auto;
 }
 .patisseries__descrip {

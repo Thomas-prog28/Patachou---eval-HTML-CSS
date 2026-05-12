@@ -6,9 +6,8 @@
     color: $color-w;
     font-family: $font-kaisei;
     display: flex;
-    flex-direction: column;   
-    justify-content: center; 
-    gap: 35px;
+    flex-direction: column;
+    justify-content: space-around;
     height: 2040px;
 
     &__item {
@@ -17,13 +16,9 @@
         justify-content: center;
         gap: 50px;
     }
-
-    &__hdtitle {
-        padding-top: 50px;
-    }
-
+    
     &__img {
-        width: 70%;
+        width: 70vw;
         margin: 0 auto;
     }
 
@@ -41,6 +36,6 @@
         margin: 0 auto;
         background: none;
         border: 1px white solid;
-        padding: 10px;        
+        padding: 10px;
     }
 }
