@@ -1,3 +1,28 @@
-header {
-    color: red;
+@use '../abstracts/variables' as *;
+
+.header {
+    text-align: center;
+    font-family: $font-pop;
+    padding: 15px;
+    
+
+    &__list {
+        list-style: none;
+        margin-top: 5px;
+    }
+
+    &__link {
+        color: $color-bl;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-gold;
+        }
+    }
 }
+
+
+

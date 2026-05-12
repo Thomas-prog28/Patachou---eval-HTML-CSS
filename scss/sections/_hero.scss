@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/haute-couture-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 310px;
+
+    &__title {
+        font-family: $font-kaisei;
+        text-align: center;
+        background-color: $color-w;
+        width: 290px;
+        margin: 0 auto;
+        padding: 25px;
+
+        &__span {
+            display: block;
+        }
+    }
+}

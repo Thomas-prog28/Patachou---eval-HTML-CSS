@@ -1,5 +1,48 @@
-header {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+}
+.header__list {
+  list-style: none;
+  margin-top: 5px;
+}
+.header__link {
+  color: #000000;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: #AB864C;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/haute-couture-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 310px;
+}
+.hero__title {
+  font-family: "Kaisei Decol", sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  width: 290px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.hero__title__span {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

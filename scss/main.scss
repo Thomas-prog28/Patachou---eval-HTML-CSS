@@ -1,1 +1,5 @@
-@use './layout/header'
+@use './base/reset.scss';
+@use './abstracts/variables';
+@use './layout/header';
+@use './sections/hero';
+@use './sections/savoirfaire';
