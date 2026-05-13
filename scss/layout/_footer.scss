@@ -1,26 +1,24 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .footer {
     background-color: $color-bl;
     color: $color-w;
     font-family: $font-pop;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include flexcol;
 
     @media(min-width: 768px) {
-            font-size: 0.7em;
-        }
+        font-size: 0.7em;
+    }
 
     &__block1 {
-        display: flex;
-        flex-direction: column;
+        @include flexcol;
         padding: 70px;
         gap: 20px;
 
         @media(min-width: 768px) {
-            display: flex;
-            flex-direction: row;
+            @include flexrow;
             justify-content: space-around;
             padding: 50px 30px 50px 30px;
             gap: 20px;
@@ -29,7 +27,7 @@
 
     &__logo {
         width: 50%;
-        margin: 0;
+        margin: 0 auto;
 
         @media(min-width: 768px) {
             width: 13%;
@@ -67,16 +65,7 @@
     }
 
     &__blockb {
-        display: flex;
-        flex-direction: column;
         text-align: left;
-    }
-
-    &__followme {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
     }
 
     &__logors {
@@ -93,8 +82,7 @@
 
     &__mentions {
         @media(min-width: 768px) {
-            display: flex;
-            justify-content: center;
+            @include flexrow;
             gap: 30px;
         }
     }

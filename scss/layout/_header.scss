@@ -2,17 +2,17 @@
 // import du fichier scss de variable pour utilisation des variables
 // =================================================================
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 
 .header {
     text-align: center; //alignement de tous les éléments
     font-family: $font-pop; //choix de la police d'écriture
     padding: 15px; //insertion d'un espacement de 15px entre tous les éléments et le bords de la section header
-    position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
 
     @media (min-width: 768px) {
-        display: flex;
+        @include flexrow;
         justify-content: space-between;
         padding: 15px 50px 15px 50px;
     }
@@ -30,8 +30,7 @@
         line-height: 1.8em;
 
         @media (min-width: 768px) {
-            display: flex;
-            flex-direction: row;
+            @include flexrow;
             gap: 15px;
         }
     }

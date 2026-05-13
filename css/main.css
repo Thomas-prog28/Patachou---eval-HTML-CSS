@@ -20,12 +20,13 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 15px;
-  position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
 }
 @media (min-width: 768px) {
   .header {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
     padding: 15px 50px 15px 50px;
   }
@@ -44,6 +45,7 @@
   .header__list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 15px;
   }
 }
@@ -69,7 +71,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-image: url("/images/haute-couture-2.jpg");
   background-size: cover;
   background-position: center;
@@ -152,6 +153,7 @@
 @media (min-width: 768px) and (min-width: 1024px) {
   .patisseries {
     height: 700px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
@@ -173,6 +175,7 @@
 }
 @media (min-width: 1024px) {
   .patisseries__globalitem {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0 100px 0 100px;
@@ -234,6 +237,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 30px;
   margin: 50px 0 80px 0;
   padding: 16px;
@@ -245,7 +249,9 @@
 }
 @media (min-width: 768px) and (min-width: 1024px) {
   .story {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
     padding: 35px 86px 35px 86px;
   }
 }
@@ -266,12 +272,14 @@
 .story__block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 @media (min-width: 1024px) {
   .story__block {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 100px 20px 0;
   }
 }
@@ -333,18 +341,22 @@
   padding: 0 16px 30px 16px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 @media (min-width: 768px) {
   .contact {
-    padding: 16px 25px 16px 25px;
+    padding: 16px 25px;
     margin-bottom: 80px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
   .contact {
-    padding: 16px 86px 16px 86px;
+    padding: 16px 86px;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1024px) {
@@ -363,8 +375,9 @@
   .contact__title {
     text-align: left;
     width: 600px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     padding: 0;
+    line-height: 1.2em;
   }
 }
 .contact__descrip {
@@ -375,12 +388,14 @@
 .contact__formulaire {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 .contact__identity {
   border: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
   .contact__identity {
@@ -393,6 +408,8 @@
 }
 .contact__fields {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 7px;
 }
 .contact__underfields {
@@ -421,6 +438,7 @@
   border: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .contact__email {
@@ -436,6 +454,7 @@
   border: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
   .contact__champs3 {
@@ -444,6 +463,7 @@
 }
 .contact__confidentiality {
   display: flex;
+  flex-direction: row;
   gap: 5px;
 }
 .contact__checkbox {
@@ -474,13 +494,19 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 30px;
   color: #ffffff;
 }
 .map__titre {
   font-family: "Kaisei Decol", sans-serif;
-  font-size: 2.9em;
+  font-size: 1.9em;
   margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .map__titre {
+    font-size: 2.9em;
+  }
 }
 .map__adresse {
   font-family: "Poppins", sans-serif;
@@ -501,6 +527,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .footer {
@@ -510,6 +537,7 @@
 .footer__block1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 70px;
   gap: 20px;
 }
@@ -517,6 +545,7 @@
   .footer__block1 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     justify-content: space-around;
     padding: 50px 30px 50px 30px;
     gap: 20px;
@@ -524,7 +553,7 @@
 }
 .footer__logo {
   width: 50%;
-  margin: 0;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .footer__logo {
@@ -558,15 +587,7 @@
   line-height: 0.6em;
 }
 .footer__blockb {
-  display: flex;
-  flex-direction: column;
   text-align: left;
-}
-.footer__followme {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
 }
 .footer__logors {
   width: 30px;
@@ -581,6 +602,7 @@
 @media (min-width: 768px) {
   .footer__mentions {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 30px;
   }

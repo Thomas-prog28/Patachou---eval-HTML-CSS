@@ -2,12 +2,10 @@
 // import du fichier scss de variable pour utilisation des variables
 // =================================================================
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .hero {
-    display: flex; //passage en display flex de la structure section/h1 pour manipuler le h1 
-    flex-direction: column;
-    justify-content: center; //centrage horizontale du h1
-    align-items: center;
+    @include flexcol;
     background-image: url('/images/haute-couture-2.jpg');
     background-size: cover;
     background-position: center;
