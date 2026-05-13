@@ -3,6 +3,10 @@
     border-top: 2px solid #000;
     width: 82%;
     margin: 2.5rem auto;
+
+    @media (min-width: 1024px) {
+        width: 88%;
+    }
 }
 
 
