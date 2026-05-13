@@ -235,18 +235,40 @@
 }
 @media (min-width: 768px) {
   .story {
-    padding: 25px 25px 10px 25px;
+    padding: 25px;
   }
 }
-.story__block1 {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+@media (min-width: 768px) and (min-width: 1024px) {
+  .story {
+    flex-direction: row;
+    padding: 35px 86px 35px 86px;
+  }
 }
 .story__badge {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
-  padding: 30px;
+}
+@media (min-width: 768px) {
+  .story__badge {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .story__badge {
+    width: 30vw;
+  }
+}
+.story__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .story__block {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 100px 20px 0;
+  }
 }
 .story__guill {
   display: block;
@@ -255,8 +277,13 @@
 }
 @media (min-width: 768px) {
   .story__guill {
-    width: 6%;
+    width: 5%;
     margin: 0;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .story__guill {
+    width: 4%;
   }
 }
 .story__title {
@@ -268,20 +295,26 @@
     text-align: left;
   }
 }
+@media (min-width: 768px) and (min-width: 1024px) {
+  .story__title {
+    font-size: 1.3em;
+  }
+}
 .story__span {
   position: relative;
-  top: 9px;
-}
-.story__block2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-family: "Poppins", sans-serif;
+  top: 6px;
 }
 .story__descrip {
   text-align: left;
+  font-family: "Poppins", sans-serif;
   font-size: 0.85em;
   line-height: 1.2em;
+}
+@media (min-width: 1024px) {
+  .story__descrip {
+    width: 520px;
+    font-size: 0.7em;
+  }
 }
 .story__btn {
   color: #ffffff;
