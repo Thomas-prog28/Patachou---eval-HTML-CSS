@@ -1,35 +1,43 @@
+// =================================================================
+// import des fichier scss contenant : 
+//     - les variables
+//     - les mixins
+//     - les éléments de base
+// =================================================================
+
+
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 @use '../base/base' as *;
 
 .patisseries {
-    background-color: $bgcolor;
-    text-align: center;
-    color: $color-w;
-    @include flexcol;
-    gap: 35px;
-    height: 1850px;
+    background-color: $bgcolor;                 //application d'une couleur d'arrière-plan à la section "patisseries"
+    text-align: center;                         //alignement de tous les éléments dans cette section
+    color: $color-w;                            //couleur de la police d'écriture appliqué par une variable de trouvant dans le fichier variables.scss ; ici : white
+    @include flexcol;                           //utilisation mixin pour : passage en display Flex colonne de tous les éléments enfants de la section patisseries
+    gap: 35px;                                  //espacement de 35px entre chaque éléments enfant
+    height: 1850px;                             //hauteur fixe de 1850px appliquée à la section patisseries
 
-    @media (min-width: 768px) {
-        height: 1550px;
+    @media (min-width: 768px) {                 //media query : toutes les modifications suivantes s'effectueront dès lors que nous sommes sur un écran de largeur mini 768px (format tablette)
+        height: 1550px;                         //hauteur fixe de 1550px appliquée à la section patisseries
 
-        @media (min-width: 1024px) {
-            height: 700px;
-            @include flexcol;
-            gap: 40px;
+        @media (min-width: 1024px) {            //media query : toutes les modifications suivantes s'effectueront dès lors que nous sommes sur un écran de largeur mini 1024px (format desktop)
+            height: 700px;                      //hauteur fixe de 700px appliquée à la section patisseries
+            @include flexcol;                   //utilisation mixin pour : passage en display Flex colonne de tous les éléments enfants de la section patisseries
+            gap: 40px;                          //espacement de 40px entre chaque éléments enfant
         }
     }
 
     &__hdtitle {
-        margin-bottom: 35px;
+        margin-bottom: 35px;                    //application d'une marge de 35px en-dessous du titre pour espacer du premier item
 
         @media(min-width: 768px) {
-            margin-bottom: 15px;
+            margin-bottom: 15px;                //application d'une marge de 15px en-dessous du titre pour espacer du premier item
         }
     }
 
     &__globalitem {
-        @include flexcol;
+        @include flexcol;                       //utilisation mixin pour : passage en display Flex colonne de tous les éléments enfants de la section patisseries
         gap: 25px;
 
         @media(min-width: 1024px) {

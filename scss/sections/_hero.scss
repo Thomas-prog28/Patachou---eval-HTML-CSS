@@ -1,34 +1,37 @@
 // =================================================================
-// import du fichier scss de variable pour utilisation des variables
+// import des fichier scss contenant : 
+//     - les variables
+//     - les mixins
 // =================================================================
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
+
 .hero {
-    @include flexcol;
-    background-image: url('/images/haute-couture-2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 310px;
+    @include flexcol;                                               //utilisation mixin pour : passage en display Flex column (en colonne) de tous les éléments enfants de la section Hero
+    background-image: url('/images/haute-couture-2.jpg');           //application d'une image à même le fond de la section Hero
+    background-size: cover;                                         //réglage de la taille de l'image d'arrière plan. En cover, l'image est redimensionnée pour remplir le conteneur entièrement
+    background-position: center;                                    //ce réglage définit sa position initiale dans l'arrière-plan
+    height: 310px;                                                  //hauteur fixe appliquée à la section Hero
 
-    &__title {
-        font-family: $font-kaisei;
-        text-align: center;
-        background-color: rgba($color-w, 0.85);
-        width: 80%;
-        margin: 0 auto;
-        padding: 25px;
-        line-height: 40px;
+    &__title {                                                      //classe correspondante à la balise H1 : le titre            
+        font-family: $font-kaisei;                                  //police appliqué au titre
+        text-align: center;                                         //centrage de l'élément titre H1
+        background-color: rgba($color-w, 0.85);                     //mise en légère transparence du font de cet élément H1
+        width: 80%;                                                 //réglage de la largeur de l'élément H1 à 80%
+        margin: 0 auto;                                             //centrage de l'élément H1 dans sa section Hero
+        padding: 25px;                                              //application d'un espace de 25px entre le contenu (la police) de notre H1 et sa bordure
+        line-height: 40px;                                          //espacement de 40px entre les lignes
 
-        @media (min-width: 768px) {
-            font-size: 2.6em;
-            height: 200px;
-            padding: 50px;
-            line-height: 50px;
+        @media (min-width: 768px) {                                 //media query : toutes les modifications suivantes s'effectueront dès lors que nous sommes sur un écran de largeur mini 768px (format tablette)
+            font-size: 2.6em;                                       //réglage de la taille de la police à 2.6 fois celle de l'élément parent
+            height: 200px;                                          //hauteur de la section Hero fixée à 200px quand on passe à 768px mini de largeur
+            padding: 50px;                                          //espace de 50px entre le contenu (le titre) et sa bordure
+            line-height: 50px;                                      //espacement de 50px entre les lignes
         }
     }
 
-    &__span {
+    &__span {                                                       //mise en display block d'une partie du texte pour le faire revenir à la ligne et le travailler indépendemment (couleur, taille,...) si on le souhaite.
         display: block;
     }
 }

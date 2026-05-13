@@ -1,38 +1,44 @@
+// =================================================================
+// import des fichier scss contenant : 
+//     - les variables
+//     - les mixins
+//     - les éléments de base
+// =================================================================
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 @use '../base/base' as *;
 
+
 .savoirfaire {
-    display: block;
-    text-align: center;
+    text-align: center;                         //alignement de tous les éléments 
 
     &__title {
-        font-size: 1.3em;
-        padding: 10px;
-        margin: 50px 0;
+        font-size: 1.3em;                       //réglage de la taille de la police à 1.3 fois celle définit par défaut pour l'élément parent 
+        padding: 10px;                          //insertion d'un espacement de 10px entre le contenu (le titre) et sa bordure 
+        margin: 50px 0;                         //centrage verticale et horizontal de l'élément;
     }
 
     &__span {
-        display: block;
-        font-size: 0.6em;
-        margin-top: 7px;
+        display: block;                         //mise en display block d'une partie du texte (avec la balise SPAN) pour le faire revenir à la ligne et le travailler indépendemment (couleur, taille,...) si on le souhaite.
+        font-size: 0.6em;                       //réglage de la taille de la police à 0.6 fois celle définit par défaut pour l'élément parent
+        margin-top: 7px;                        //petite espace de 7px à l'extérieur de la bordure pour espacer la ligne du haut
     }
 
     &__descrip {
-        border: 1px black solid;
-        padding: 18px;
-        margin: 50px auto 60px auto;
+        border: 1px black solid;              //bordure de 1px d'épaisseur couleur noire et trait continu autour du paragraphe                              
+        padding: 18px;                          //insertion d'un espacement de 18px entre le contenu (le paragraphe) et sa bordure 
+        margin: 50px auto 60px auto;            //marge appliquées à l'extérieur de la borudure de l'élément pour le centrer horizontalement et verticalement dans la section savoirfaire et par rapport à son titre H1
 
 
-        @media (min-width: 768px) {
-            margin: 50px auto 60px auto;
-            padding: 18px 120px;
+        @media (min-width: 768px) {             //media query : toutes les modifications suivantes s'effectueront dès lors que nous sommes sur un écran de largeur mini 768px (format tablette)
+            margin: 50px 60px;                  //marge appliquées à l'extérieur de la borudure de l'élément pour le centrer horizontalement et verticalement dans la section savoirfaire et par rapport à son titre H1
+            padding: 18px 100px;                //espace appliquée entre le contenu et sa bordure pour le centrer
 
-            @media(min-width: 1024px) {
-                width: 640px;
-                margin: 0 auto 60px auto;
-                padding: 25px 50px;
-                font-size: 1em;
+            @media(min-width: 1024px) {         //media query : toutes les modifications suivantes s'effectueront dès lors que nous sommes sur un écran de largeur mini 1024px (format desktop)
+                width: 640px;                   //application d'une largeur fixe de 1024px à l'élément
+                margin: 0 auto 60px auto;       //marge appliquées à l'extérieur de la borudure de l'élément pour le centrer horizontalement et verticalement dans la section savoirfaire et par rapport à son titre H1
+                padding: 25px 50px;             //espace appliquée entre le contenu et sa bordure pour le centrer
+                font-size: 1em;                 //réglage de la taille de la police à 1 fois celle définit par défaut pour l'élément parent 
             }
         }
     }
