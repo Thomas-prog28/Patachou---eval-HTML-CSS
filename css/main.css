@@ -16,9 +16,28 @@
   }
 }
 
+ul {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+  line-height: 1.2em;
+}
+
+h2, h3, h4 {
+  font-family: "Kaisei Decol", sans-serif;
+}
+
+legend, label {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+}
+
 .header {
   text-align: center;
-  font-family: "Poppins", sans-serif;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
 }
@@ -28,7 +47,7 @@
     flex-direction: row;
     justify-content: center;
     justify-content: space-between;
-    padding: 15px 50px 15px 50px;
+    padding: 15px 50px;
   }
 }
 @media (min-width: 768px) {
@@ -37,7 +56,6 @@
   }
 }
 .header__list {
-  list-style: none;
   margin-top: 5px;
   line-height: 1.8em;
 }
@@ -63,7 +81,7 @@
 .header__link:hover {
   color: #AB864C;
 }
-.header--color {
+.header--clr {
   color: #AB864C;
 }
 
@@ -98,13 +116,13 @@
 }
 
 .savoirfaire {
+  display: block;
   text-align: center;
 }
 .savoirfaire__title {
-  font-family: "Kaisei Decol", sans-serif;
   font-size: 1.3em;
   padding: 10px;
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
 }
 .savoirfaire__span {
   display: block;
@@ -112,24 +130,21 @@
   margin-top: 7px;
 }
 .savoirfaire__descrip {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.85em;
   border: 1px black solid;
   padding: 18px;
-  margin: 50px 0 60px 0;
-  line-height: 1.2em;
+  margin: 50px auto 60px auto;
 }
 @media (min-width: 768px) {
   .savoirfaire__descrip {
-    margin: 50px 60px 60px 60px;
-    padding: 18px 120px 18px 115px;
+    margin: 50px auto 60px auto;
+    padding: 18px 120px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
   .savoirfaire__descrip {
     width: 640px;
-    margin: 0 192px 60px 192px;
-    padding: 25px 50px 25px 50px;
+    margin: 0 auto 60px auto;
+    padding: 25px 50px;
     font-size: 1em;
   }
 }
@@ -138,7 +153,6 @@
   background-color: #AB864C;
   text-align: center;
   color: #ffffff;
-  font-family: "Kaisei Decol", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +192,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 100px 0 100px;
+    padding: 0 120px;
   }
 }
 .patisseries__item {
@@ -202,34 +216,36 @@
   }
 }
 .patisseries__descrip {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9em;
   padding: 15px;
-  line-height: 1.2em;
 }
 @media (min-width: 768px) {
   .patisseries__descrip {
-    padding: 0 92px 0 92px;
+    padding: 0 92px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
   .patisseries__descrip {
     padding: 0;
-    font-size: 0.8em;
   }
 }
 .patisseries__btn {
-  font-family: "Poppins", sans-serif;
+  border: none;
+  background-color: #AB864C;
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
   width: 90%;
   margin: 0 auto;
-  background: none;
   border: 1px white solid;
-  padding: 10px;
 }
 @media (min-width: 768px) {
   .patisseries__btn {
     width: 43%;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .patisseries__btn {
+    width: 34%;
   }
 }
 
@@ -300,7 +316,6 @@
   }
 }
 .story__title {
-  font-family: "Kaisei Decol", sans-serif;
   font-size: 2em;
 }
 @media (min-width: 768px) {
@@ -319,9 +334,6 @@
 }
 .story__descrip {
   text-align: left;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.85em;
-  line-height: 1.2em;
 }
 @media (min-width: 1024px) {
   .story__descrip {
@@ -330,11 +342,12 @@
   }
 }
 .story__btn {
-  color: #ffffff;
-  background-color: #AB864C;
   border: none;
+  background-color: #AB864C;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
   width: 110px;
-  padding: 12px;
 }
 
 .contact {
@@ -369,7 +382,6 @@
   margin: 0 auto;
   padding: 0 30px 30px 30px;
   text-align: center;
-  font-family: "Kaisei Decol", sans-serif;
 }
 @media (min-width: 768px) {
   .contact__title {
@@ -379,11 +391,6 @@
     padding: 0;
     line-height: 1.2em;
   }
-}
-.contact__descrip {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.85em;
-  line-height: 1.2em;
 }
 .contact__formulaire {
   display: flex;
@@ -402,10 +409,6 @@
     width: 50%;
   }
 }
-.contact__legend {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.85em;
-}
 .contact__fields {
   display: flex;
   flex-direction: row;
@@ -417,7 +420,6 @@
   flex-direction: column-reverse;
 }
 .contact__label {
-  font-family: "Poppins", sans-serif;
   font-size: 0.6em;
 }
 .contact__champs1 {
@@ -467,8 +469,6 @@
   gap: 5px;
 }
 .contact__checkbox {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.85em;
   width: 230px;
 }
 @media (min-width: 768px) {
@@ -478,10 +478,10 @@
 }
 .contact__btn {
   border: none;
+  background-color: #AB864C;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  background-color: #AB864C;
-  padding: 8px;
+  padding: 10px;
 }
 @media (min-width: 1024px) {
   .contact__btn {
@@ -499,7 +499,6 @@
   color: #ffffff;
 }
 .map__titre {
-  font-family: "Kaisei Decol", sans-serif;
   font-size: 1.9em;
   margin-top: 30px;
 }
@@ -507,10 +506,6 @@
   .map__titre {
     font-size: 2.9em;
   }
-}
-.map__adresse {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9em;
 }
 .map__span {
   display: block;
@@ -547,7 +542,7 @@
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-    padding: 50px 30px 50px 30px;
+    padding: 50px 30px;
     gap: 20px;
   }
 }
@@ -561,7 +556,6 @@
   }
 }
 .footer__list {
-  list-style: none;
   line-height: 1.2em;
   text-align: left;
   margin-left: 40px;

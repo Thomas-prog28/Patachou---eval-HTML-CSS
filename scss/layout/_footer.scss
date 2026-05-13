@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/base' as *;
 
 .footer {
     background-color: $color-bl;
@@ -20,7 +21,7 @@
         @media(min-width: 768px) {
             @include flexrow;
             justify-content: space-around;
-            padding: 50px 30px 50px 30px;
+            padding: 50px 30px;
             gap: 20px;
         }
     }
@@ -35,7 +36,6 @@
     }
 
     &__list {
-        list-style: none;
         line-height: 1.2em;
         text-align: left;
         margin-left: 40px;

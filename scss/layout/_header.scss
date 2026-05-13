@@ -3,18 +3,19 @@
 // =================================================================
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/base' as *;
 
 
 .header {
     text-align: center; //alignement de tous les éléments
-    font-family: $font-pop; //choix de la police d'écriture
+    //choix de la police d'écriture
     padding: 15px; //insertion d'un espacement de 15px entre tous les éléments et le bords de la section header
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
 
     @media (min-width: 768px) {
         @include flexrow;
         justify-content: space-between;
-        padding: 15px 50px 15px 50px;
+        padding: 15px 50px;
     }
 
     &__nav {
@@ -25,7 +26,6 @@
 
 
     &__list {
-        list-style: none; //retrait des puces à liste
         margin-top: 5px; //ajout d'une marge de 5px pour espacer le logo du nav. Pas d'ajout sur &__nav pour ne pas écrire de ligne en plus !
         line-height: 1.8em;
 
@@ -50,7 +50,7 @@
         }
     }
 
-    &--color {
+    &--clr {
         color: $color-gold;
     }
 }

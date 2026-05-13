@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/base' as *;
 
 .contact {
     padding: 0 16px 30px 16px;
@@ -28,7 +29,6 @@
         margin: 0 auto;
         padding: 0 30px 30px 30px;
         text-align: center;
-        font-family: $font-kaisei;
 
         @media(min-width: 768px) {
             text-align: left;
@@ -37,12 +37,6 @@
             padding: 0;
             line-height: 1.2em;
         }
-    }
-
-    &__descrip {
-        font-family: $font-pop;
-        font-size: 0.85em;
-        line-height: 1.2em;
     }
 
     &__formulaire {
@@ -59,11 +53,6 @@
         }
     }
 
-    &__legend {
-        font-family: $font-pop;
-        font-size: 0.85em;
-    }
-
     &__fields {
         @include flexrow;
         gap: 7px;
@@ -75,7 +64,6 @@
     }
 
     &__label {
-        font-family: $font-pop;
         font-size: 0.6em;
     }
 
@@ -124,9 +112,7 @@
         gap: 5px;
     }
 
-    &__checkbox {
-        font-family: $font-pop;
-        font-size: 0.85em;
+    &__checkbox {        
         width: 230px;
 
         @media(min-width: 768px) {
@@ -134,12 +120,9 @@
         }
     }
 
-    &__btn {
-        border: none;
-        color: $color-w;
-        font-family: $font-pop;
-        background-color: $bgcolor;
-        padding: 8px;
+    &__btn {    
+        @include btn;
+        
 
         @media(min-width: 1024px) {
             width: 407px;
